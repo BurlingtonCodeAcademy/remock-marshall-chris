@@ -7,24 +7,74 @@ if the CSS file gets unwieldly we can try and navigate it from here
 .master-container {
   display: grid;
   grid-template:
-    "header header" 1fr
-    "intro intro" 1fr
-    "articles aside" 3fr
-    "footer footer" 1fr/ 1fr 1fr;
+    "white header header space" 0.25fr
+    "white intro intro space" auto
+    "quote quote quote quote" auto
+    "blank articles aside stuff" 3fr
+    "footer footer footer footer" 1fr/ 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 header {
   grid-area: header;
   color: #ed786a;
+  text-align: center;
+}
+.title{
+    margin-bottom: 5px;
+}
+.subtitle{
+    margin-bottom: 100px;
 }
 .intro {
   grid-area: intro;
+  display: grid;
+  grid-template:
+    "title" 1fr
+    "images" 2fr
+    "link" 1.5fr;
+  justify-items: center;
+}
+.images {
+  max-width: 900px;
+  grid-area: images;
   display: flex;
 }
+figure {
+  margin: 15px;
+  text-align: center;
+}
+.intro h3 {
+  grid-area: title;
+  align-self: end;
+}
+
+.intro a {
+  grid-area: link;
+  align-self: center;
+}
+.intro img {
+  width: 100%;
+}
+
+.quote {
+  grid-area: quote;
+  background-color: #5f5e64;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
 main {
   grid-area: articles;
 }
 aside {
   grid-area: aside;
+  max-width: 300px;
+}
+.blog-notes img {
+  float: left;
+  margin-right: 15px;
 }
 footer {
   grid-area: footer;
