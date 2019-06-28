@@ -4,12 +4,29 @@ if the CSS file gets unwieldly we can try and navigate it from here
 
 */
 
-
-header{
-    background-color: aqua;
-    color: brown;
+.master-container {
+  display: grid;
+  grid-template:
+    "header header" 1fr
+    "intro intro" 1fr
+    "articles aside" 3fr
+    "footer footer" 1fr/ 1fr 1fr;
 }
-body{
-    display: grid;
-    
+header {
+  grid-area: header;
+  color: #ed786a;
+}
+.intro {
+  grid-area: intro;
+  display: flex;
+}
+main {
+  grid-area: articles;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+  background-color: #f0f0f0;
 }
