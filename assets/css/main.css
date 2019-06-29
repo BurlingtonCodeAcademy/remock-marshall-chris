@@ -4,6 +4,7 @@ if the CSS file gets unwieldly we can try and navigate it from here
 
 */
 
+
 .master-container {
   display: grid;
   grid-template:
@@ -14,8 +15,28 @@ if the CSS file gets unwieldly we can try and navigate it from here
 }
 header {
   grid-area: header;
-  color: #ed786a;
 }
+
+h1{
+  font-size:60px;
+  text-shadow: 2px 2px 3px silver;
+  font-family: 'Suez One', serif;
+  letter-spacing: 8px;
+  color: #ed786a
+}
+
+h4{
+  font-size:15px;
+  letter-spacing: 1.5px;
+  font-family: 'Noto Sans HK', sans-serif;
+  color: gray;
+}
+
+h3{
+  font-family: 'Noto Sans HK', sans-serif;
+  color: gray;
+}
+
 .intro {
   grid-area: intro;
   display: flex;
@@ -23,6 +44,7 @@ header {
 main {
   grid-area: articles;
 }
+
 aside {
   grid-area: aside;
 }
