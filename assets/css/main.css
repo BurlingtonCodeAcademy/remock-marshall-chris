@@ -4,7 +4,6 @@ if the CSS file gets unwieldly we can try and navigate it from here
 
 */
 
-
 .master-container {
   display: grid;
   grid-template:
@@ -20,31 +19,32 @@ header {
   color: #ed786a;
   text-align: center;
 }
-.title{
-    margin-bottom: 5px;
+.title {
+  margin-bottom: 5px;
 }
-.subtitle{
-    margin-bottom: 100px;
+.subtitle {
+  margin-bottom: 100px;
 }
 
-h1{
-  font-size:60px;
+h1 {
+  font-size: 60px;
   text-shadow: 2px 2px 3px silver;
-  font-family: 'Suez One', serif;
+  font-family: "Suez One", serif;
   letter-spacing: 8px;
-  color: #ed786a
+  color: #ed786a;
 }
 
-h4{
-  font-size:15px;
+h4 {
+  font-size: 15px;
   letter-spacing: 1.5px;
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: "Noto Sans HK", sans-serif;
   color: gray;
 }
 
-h3{
-  font-family: 'Noto Sans HK', sans-serif;
+h3 {
+  font-family: "Noto Sans HK", sans-serif;
   color: gray;
+  font-weight: normal;
 }
 
 .intro {
@@ -60,6 +60,9 @@ h3{
   max-width: 900px;
   grid-area: images;
   display: flex;
+}
+img {
+  border: 5px solid #ebebeb;
 }
 figure {
   margin: 15px;
@@ -85,6 +88,11 @@ figure {
   align-items: center;
   justify-content: center;
   height: 250px;
+  width: 100vw;
+  margin-left: -10px;
+  overflow: visible;
+  outline: 1px solid #e5e5e5;
+  outline-offset: 5px;
 }
 
 main {
@@ -99,7 +107,11 @@ aside {
   float: left;
   margin-right: 15px;
 }
+
 footer {
   grid-area: footer;
   background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 7/1/7/1;
+  grid-template-rows: auto auto;
 }
