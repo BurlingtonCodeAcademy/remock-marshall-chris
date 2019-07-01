@@ -14,8 +14,8 @@ if the CSS file gets unwieldly we can try and navigate it from here
     "white header header space" 0.25fr
     "white intro intro space" auto
     "quote quote quote quote" auto
-    "blank articles aside stuff" 3fr
-    "footer footer footer footer" 1fr/ 1fr 1fr 1fr 1fr;
+    "blank articles aside stuff" auto
+    "footer footer footer footer" auto/ 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -226,4 +226,58 @@ form{
 
 #submit{
 grid-area: button;
+margin-bottom: 50px;
   }
+.external-info{
+  display: grid;
+  grid-template:
+    "header header" 1fr
+    "local social" 2fr/ 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.local{
+  grid-area: local;
+}
+
+.social-media{
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.social{
+  margin: 10px;
+}
+.info{
+  grid-area: header;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #777777;
+  background-color: lightgrey;
+}
+
+.button>.fa{
+  color: white;
+  background-color: inherit;
+}

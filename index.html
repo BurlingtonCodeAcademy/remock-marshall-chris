@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css?family=Suez+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
@@ -58,7 +59,7 @@
           </figure>
         </div>
         <!--is a <button> with a link in it better than this?-->
-        <a class="button" href="/learn-more.html">TELL ME MORE</a>
+        <a class="button" href="/learn-more.html"><i class="fa fa-file"></i>TELL ME MORE</a>
       </section>
       <div class="contaner quote">
         USE THIS SPACE FOR A GREAT QUOTE
@@ -89,7 +90,7 @@
             mollis, semper mauris id, convallis ligula. Donec gravida odio non
             ullamcorper viverra.
           </p>
-          <a class="button" href="/continue-reading.html">CONTINUE READING</a>
+          <a class="button" href="/continue-reading.html"><i class="fa fa-file"></i>CONTINUE READING</a>
         </article>
         <hr />
         <hr />
@@ -117,7 +118,7 @@
             mollis, semper mauris id, convallis ligula. Donec gravida odio non
             ullamcorper viverra.
           </p>
-          <a class="button" href="/continue-reading.html">CONTINUE READING</a>
+          <a class="button" href="/continue-reading.html"><i class="fa fa-file"></i>CONTINUE READING</a>
         </article>
       </main>
       <aside>
@@ -162,7 +163,7 @@
             Ut lacinia lacinia enim eget sagittis. Aenean consectetur ac neque
             vel tincidunt.
           </p>
-          <a class="button" href="/learn-more.html">LEARN MORE</a>
+          <a class="button" href="/learn-more.html"><i class="fa fa-file"></i>LEARN MORE</a>
         </section>
         <hr />
         <section class="blog-notes">
@@ -175,7 +176,7 @@
             Ut lacinia lacinia enim eget sagittis. Aenean consectetur ac neque
             vel tincidunt.
           </p>
-          <a class="button" href="/learn-more.html">LEARN MORE</a>
+          <a class="button" href="/learn-more.html"><i class="fa fa-file"></i>LEARN MORE</a>
         </section>
       </aside>
       
@@ -188,23 +189,27 @@
           <input placeholder="Name:" type="text" id="name" name="user_name" />
           <input placeholder="E-Mail:"type="email" id="mail" name="user_mail" />
           <textarea placeholder="Message:" id="msg" name="user_message"></textarea>
-          <button id="submit" class="button" type="submit">SEND MESSAGE</button>
+          <button id="submit" class="button" type="submit"><i class="fa fa-envelope"></i>SEND MESSAGE</button>
         </form>
         <section class="external-info">
-          <p>
+          <p class="info">
             Integer hendrerit ullamcorper feugiat. Maecenas et augue
             condimentum, scelerisque purus non, porta massa. Nam sit amet nulla
             lobortis sapien pellentesque convallis quis sit amet nisi. Nullam
             rutrum arcu ac pulvinar blandit.
           </p>
           <!-- more than one way to add icons we can pick latter -->
-          <p>1234 Somewhere Road Burlington, VT 00000 USA</p>
-          <p>(000) 000-0000</p>
-          <a href="info@untitled.tld">info@untitled.tld</a>
-          <a class="social-media" href="www.social.com">@untitled</a>
-          <a class="social-media" href="www.social.com">instagram.com</a>
-          <a class="social-media" href="www.social.com">dribbble.com</a>
-          <a class="social-media" href="www.social.com">facebook.com</a>
+          <div class="local">
+          <p><i class="fa fa-home"></i>1234 Somewhere Road Burlington, VT 00000 USA</p>
+          <p><i class="fa fa-phone"></i>(000) 000-0000</p>
+          <a href="info@untitled.tld"><i class="fa fa-envelope"></i>info@untitled.tld</a>
+          </div>
+          <div class="social-media">
+          <a href="#" class="social"><i class="fa fa-twitter">   </i>@untitled</a>
+          <a href="#" class="social"><i class="fa fa-instagram"> </i>  instagram.com</a>
+          <a href="#" class="social"><i class="fa fa-dribbble">  </i> dribbble.com</a>
+          <a href="#" class="social"><i class="fa fa-facebook">  </i> facebook.com</a>
+          </div>
         </section>
       </footer>
     </div>
