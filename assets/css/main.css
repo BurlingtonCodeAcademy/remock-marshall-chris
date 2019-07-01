@@ -56,11 +56,6 @@ h4 {
   color: gray;
 }
 
-h3 {
-  font-family: "Noto Sans HK", sans-serif;
-  color: gray;
-  font-weight: normal;
-}
 
 .intro {
   grid-area: intro;
@@ -184,10 +179,51 @@ p{
 strong{
   color: #666666
 }
+
 footer {
   grid-area: footer;
   background-color: #f0f0f0;
   display: grid;
-  grid-template-columns: 7/1/7/1;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  grid-auto-flow: column;
 }
+
+h3{
+  font-family: "Noto Sans HK", sans-serif;
+  color: gray;
+  font-weight: normal;
+  grid-column: span 2;
+  text-align: center;
+}
+
+form{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "name email"
+  "msg msg"
+  "msg msg"
+  "button ."
+  }
+
+#name{
+  grid-area: name;
+  height: 30px; 
+}
+
+#mail{
+  grid-area: email;
+  height: 30px;
+}
+
+#msg{
+  grid-area: msg;
+}
+
+#submit{
+grid-area: button;
+  }
